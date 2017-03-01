@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.CMC_Cairo.com/infrastructure/" xmlns="http://www.CMC_Cairo.com/infrastructure/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+
+  <!-- Extensions for infrastructure OCP element attributes to add more operational details such as max capacity, min dwell time -->
+
+  <xs:attribute name="connectionWith" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>if the station is a connection, this property provides the list of connected statinos as comma separated string</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+  
+  <xs:attribute name="maxCapacity" type="xs:integer">
+    <xs:annotation>
+      <xs:documentation>provide the Maximum passengers capacity for OCP objects that represent passengers' stations</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+
+  <xs:attribute name="storageCapacity" type="xs:integer">
+    <xs:annotation>
+      <xs:documentation>provide the Maximum number of trains to be stored in a station e.g terminal stations of cairo metro can store up to 18 trains</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+
+  <xs:attribute name="minDwellTimeInSeconds" type="xs:integer">
+    <xs:annotation>
+      <xs:documentation>Provide the minimum dwell time allowed in this station, no trains are allowed to stop less than this time</xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+
+  <!--<xs:simpleType name="colourType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="blue"/>
+      <xs:enumeration value="red"/>
+      <xs:enumeration value="yellow"/>
+    </xs:restriction>
+  </xs:simpleType>-->
+
+</xs:schema>

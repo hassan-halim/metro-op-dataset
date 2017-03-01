@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<railml xmlns="http://www.railml.org/schemas/2013"  xmlns:cmc="http://www.CMC_Cairo.com/infrastructure/" xmlns:evu="http://www.example.com/EVU" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation= "http://www.railml.org/schemas/2013 http://www.example.com/EVU CMC_railML_Infra_ex.xsd" version="2.2">
+  <infrastructure id="l1">
+    <tracks>
+      <track id="t1" code="1.2" name="Koba_MSadr">
+        <trackTopology>
+          <trackBegin pos="0" id="t1_s1_b"></trackBegin>
+          <trackEnd pos="3000" id="t1_s2_e"></trackEnd>
+        </trackTopology>
+      </track>
+    
+        <track id="t2" code="2.3" name="MSadr_Demerdash">
+        <trackTopology>
+          <trackBegin pos="3000" id="t2_s2_b"></trackBegin>
+          <trackEnd pos="6000" id="t2_s3_e"></trackEnd>
+        </trackTopology>
+      </track>
+
+      <track id="t3" code="3.4" name="Demerdash_Ghamra">
+        <trackTopology>
+          <trackBegin pos="6000" id="t3_s3_b"></trackBegin>
+          <trackEnd pos="9000" id="t3_s4_e"></trackEnd>
+        </trackTopology>
+      </track>
+    
+     <track id="t4" code="4.5" name="Ghamra_Mubarak">
+        <trackTopology>
+          <trackBegin pos="9000" id="t4_s4_b"></trackBegin>
+          <trackEnd pos="12000" id="t4_s5_e"></trackEnd>
+        </trackTopology>
+      </track>
+    
+     <track id="t5" code="5.6" name="Mubarak_Orabi">
+        <trackTopology>
+          <trackBegin pos="12000" id="t5_s5_b"></trackBegin>
+          <trackEnd pos="15000" id="t5_s6_e"></trackEnd>
+        </trackTopology>
+      </track>
+
+     <track id="t6" code="6.7" name="Orabi_Nasser">
+        <trackTopology>
+          <trackBegin pos="15000" id="t6_s6_b"></trackBegin>
+          <trackEnd pos="18000" id="t6_s7_e"></trackEnd>
+        </trackTopology>
+      </track>
+      
+     <track id="t7" code="7.8" name="Nasser_Sadat">
+        <trackTopology>
+          <trackBegin pos="18000" id="t7_s7_b"></trackBegin>
+          <trackEnd pos="21000" id="t7_s8_e"></trackEnd>
+        </trackTopology>
+      </track>
+    
+     <track id="t8" code="8.9" name="Sadat_SZaghloul">
+        <trackTopology>
+          <trackBegin pos="21000" id="t8_s8_b"></trackBegin>
+          <trackEnd pos="24000" id="t8_s9_e"></trackEnd>
+        </trackTopology>
+      </track>
+    
+     <track id="t9" code="9.10" name="SZaghloul_SZainab">
+        <trackTopology>
+          <trackBegin pos="24000" id="t9_s9_b"></trackBegin>
+          <trackEnd pos="27000" id="t9_s10_e"></trackEnd>
+        </trackTopology>
+      </track>
+      
+     <track id="t10" code="10.11" name="SZainab_MSaleh">
+        <trackTopology>
+          <trackBegin pos="27000" id="t10_s10_b"></trackBegin>
+          <trackEnd pos="30000" id="t10_s11_e"></trackEnd>
+        </trackTopology>
+      </track>
+    </tracks>
+    <!-- Opertion control points can represents any point act an action in the network e.g stations, maintainance platforms-->
+    <operationControlPoints>
+      <ocp id="L1P1S01" code="HELWAN" name="Helwan"       description="Helwan" type ="Station" cmc:storageCapacity ="18" cmc:minDwellTime ="120"/>
+      <ocp id="L1P1S02" code="AINH" name="AinHelwan"    description="Ain Helwan" type ="Station" />
+      <ocp id="L1P1S03" code="HUNI" name="HelwanUni."   description="Helwan University" type ="Station"/>
+      <ocp id="L1P1S04" code="WDIHOF" name="WadiHof"      description="Wadi Hof" type ="Station"/>
+      <ocp id="L1P1S05" code="HKHELW" name="HKHelwan"     description="Hadayek Helwan" type ="Station"/>
+      <ocp id="L1P1S06" code="MASARA" name="Masara"       description="Elmaasara" type ="Station"/>
+      <ocp id="L1P1S07" code="TORA" name="ToraAsmant"   description="Tora Elasmant" type ="Station"/>
+      <ocp id="L1P1S08" code="KOZIKA" name="Kozzika"      description="Kozzika" type ="Station"/>
+      <ocp id="L1P1S09" code="TORA" name="ToraBalad"    description="Tora Elbalad" type ="Station"/>
+      <ocp id="L1P1S10" code="SMADI" name="SakanatMaadi" description="Sakanat El-Maadi" type ="Station"/>
+      <ocp id="L1P1S11" code="MADI" name="Maadi"        description="Maadi" type ="Station"/>
+      <ocp id="L1P1S12" code="HKMAD" name="HKMaadi"      description="Hadayk ElMaadi" type ="Station"/>
+      <ocp id="L1P1S13" code="DSALAM" name="DarSalam"     description="Dar El-Salam" type ="Station" cmc:/>
+      <ocp id="L1P1S14" code="ZAHRAA" name="Zahraa"       description="El-Zahraa" type ="Station"/>
+      <ocp id="L1P1S15" code="MGIRG" name="MarGirgis"    description="Mar Girgis" type ="Station"/>
+      <ocp id="L1P1S16" code="MSALEH" name="MalikSaleh"   description="El-Malik El-Saleh" type ="Station"/>
+      <ocp id="L1P1S17" code="SZINAB" name="SaydaZinab"   description="El-Sayeda Zinab" type ="Station"/>
+      <ocp id="L1P1S18" code="SZAGH" name="SZaghloul"    description="Saad Zaghloul" type ="Station"/>
+      <ocp id="L1P1S19" code="SADAT" name="Sadat"        description="Anwar El-Sadat" type ="Station">
+        <propOther status="closed"/>
+      </ocp>
+      <ocp id="L1P1S20" code="NASR" name="Nasser"       description="Gamal Abd El-Nasser" type ="Station"/>
+      <ocp id="L1P1S21" code="ORABI" name="Orabi"        description="Ahmed Orabi" type ="Station"/>
+      <ocp id="L1P1S22" code="SHOHDA" name="AlShohadaa"   description="Al-Shohdaa" type ="Station"/>
+      <ocp id="L1P1S23" code="GHAM" name="Ghamra"       description="Ghamra" type ="Station"/>
+      <ocp id="L1P1S24" code="DMRDSH" name="Demerdash"    description="El-Demerdash" type ="Station"/>
+      <ocp id="L1P1S25" code="MSADR" name="Msadr"        description="Manshiet El-Sadr" type ="Station"/>
+      <ocp id="L1P1S26" code="KOBA" name="KKoba"        description="Kobri El-Koba" type ="Station"/>
+      <ocp id="L1P1S27" code="HMKOBA" name="HMKoba"       description="Hamamat AlKoba" type ="Station"/>
+      <ocp id="L1P1S28" code="SKOBA" name="SKoba"        description="Saray El-Koba" type ="Station"/>
+      <ocp id="L1P1S29" code="HKZATON" name="HKZaiton"     description="Hadayek El-Zaytoon" type ="Station"/>
+      <ocp id="L1P1S30" code="HZATON" name="HLZaiton"     description="Helmyet El-Zaytoon" type ="Station"/>
+      <ocp id="L1P1S31" code="MATA" name="Matarya"      description="El-Matarya" type ="Station"/>
+      <ocp id="L1P1S32" code="AINSH" name="AinShams"     description="Ain Shams" type ="Station"/>
+      <ocp id="L1P1S33" code="EZBETN" name="EzbetNakhl"   description="Ezbet El-Nakhl" type ="Station"/>
+      <ocp id="L1P1S34" code="MARG" name="Marg"         description="El-Marg" type ="Station" cmc:storageCapacity ="18"/>
+      <ocp id="L1P1S35" code="NMRG" name="NewMarg"      description="El-Marg El-Gidida" type ="Station"/>
+    </operationControlPoints>
+  </infrastructure>
+</railml>
